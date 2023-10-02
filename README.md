@@ -1,2 +1,2 @@
-the first code with python
+The First Code With Python
 
