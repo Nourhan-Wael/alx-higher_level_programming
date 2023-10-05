@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 def uppercase(str):
+    cn = 0
     for i in str:
-        if i == ' ':
-            print(i, end="")
-        elif ord(i) >= ord('a') and ord(i) <= ord('z'):
-            print("{:c}".format(ord(i) - 32), end="")
+        j = 0
+        cn = cn + 1
+        if ord(i) >= ord('a') and ord(i) <= ord('z'):
+            j = ord(i) - 32
         else:
-            print(i, end="")
-    print()
+            j = ord(i)
+        if (cn == len(str)):
+            print("{:c}".format(j))
+        else:
+            print("{:c}".format(j), end="")
